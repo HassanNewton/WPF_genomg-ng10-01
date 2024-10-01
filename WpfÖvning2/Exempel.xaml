@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfÖvning2.Exempel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfÖvning2"
+        xmlns:TextBoxUserControl="clr-namespace:WpfÖvning2"
+        mc:Ignorable="d"
+        Title="Exempel" Height="200" Width="200">
+    <Grid>
+        <StackPanel>
+            <TextBoxUserControl:TextBoxUserControl HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBoxUserControl:TextBoxUserControl HorizontalAlignment="Center"   VerticalAlignment="Center" />
+            <TextBoxUserControl:TextBoxUserControl HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBoxUserControl:TextBoxUserControl HorizontalAlignment="Center"  VerticalAlignment="Center" />
+            <TextBoxUserControl:TextBoxUserControl HorizontalAlignment="Center"  VerticalAlignment="Center" />
+            <TextBoxUserControl:TextBoxUserControl HorizontalAlignment="Center"  VerticalAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>
