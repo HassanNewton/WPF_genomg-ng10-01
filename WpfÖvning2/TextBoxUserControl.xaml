@@ -19,7 +19,8 @@
                      Width="200" 
                      Grid.ColumnSpan="2"
                      Background="Transparent"
-                     TextChanged="txtBox_TextChanged"/>
+                     TextChanged="txtBox_TextChanged"
+                 />
         <TextBlock x:Name="tbPlaceHolder" 
                    Text="UserName" 
                    FontSize="20"
