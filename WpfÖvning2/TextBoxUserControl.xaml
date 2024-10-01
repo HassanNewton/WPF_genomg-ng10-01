@@ -4,29 +4,41 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfÖvning2"
-             mc:Ignorable="d" 
-             d:DesignHeight="150" d:DesignWidth="400">
+             mc:Ignorable="d" Height="27" Width="197">
 
-    <Grid>
+    <Grid Background="white">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="89*"/>
+        </Grid.ColumnDefinitions>
+
         <TextBox x:Name="txtBox" 
-                     HorizontalAlignment="Center" 
+                     HorizontalAlignment="Left" 
                      VerticalAlignment="Center"
                      FontSize="20"
-                     Width="200"/>
+                     Width="200" 
+                     Grid.ColumnSpan="2"
+                     Background="Transparent"
+                     TextChanged="txtBox_TextChanged"/>
         <TextBlock x:Name="tbPlaceHolder" 
                    Text="UserName" 
                    FontSize="20"
-                   HorizontalAlignment="Center" 
+                   HorizontalAlignment="Left" 
                    VerticalAlignment="Center"
-                   Foreground="LightGray"
+                   Foreground="LightGray" 
+                   Grid.ColumnSpan="2" 
+                   Margin="53,0,0,0"
+                   Panel.ZIndex="-1"
                    />
         <Button x:Name="btnClear"
-                HorizontalAlignment="Left" 
+                HorizontalAlignment="Right" 
                 VerticalAlignment="Center"
                 Content="Clear"
                 Foreground="Gray" 
-                Margin="269,0,0,0" 
-                Height="27"
+                Background="Transparent"
+                BorderThickness="0"
+                Height="27" Grid.Column="1" 
+                Click="btnClear_Click"
                 />
     </Grid>
 </UserControl>
